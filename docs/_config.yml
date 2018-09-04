@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+auto: true
+server: true
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:title
+paginate: 10
+paginate_path: "/page:num"
