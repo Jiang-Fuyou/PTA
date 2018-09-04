@@ -1,7 +1,7 @@
 # Welcome to Chiang Yung's PTA documentation
 
 ## PTA-B
-- [PTA_B_1001_1010.md](1001-1010)
+- [1001-1010](PTA-B-1001-1010.md)
 
 ## PTA-A
 
