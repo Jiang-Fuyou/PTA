@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+using namespace std;
+
+int main(int argc, char const* argv[])
+{
+    int tmpa, tmpx;
+    vector<int> a, x;
+    string str;
+    stringstream ss;
+
+    getline(cin, str);
+    ss << str;
+    while (ss >> tmpa >> tmpx) {
+        a.push_back(tmpa);
+        x.push_back(tmpx);
+    }
+    ss.clear();
+
+    for (unsigned int i = 0; i < a.size(); i++) {
+        if (i != 0) {
+            cout << " ";
+        }
+        if (x[i] != 0) {
+            cout << a[i] * x[i] << " " << x[i] - 1;
+        }
+    }
+
+    if (a.size() == 1 && x[0] == 0) {
+        cout << "0 0";
+    }
+
+    cout << endl;
+
+    return 0;
+}
