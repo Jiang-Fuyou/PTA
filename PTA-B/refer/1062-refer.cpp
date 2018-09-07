@@ -1,8 +1,17 @@
+/*
+ * 最简分数需要用到最大公约数，因此需要先定义一个最大公约数函数。
+ * 最大公约数一般用辗转相除法得到，辗转相除法即：
+ *
+ *
+ */
+
 #include <iostream>
 using namespace std;
+
 int gcd(int a, int b){
     return b == 0 ? a : gcd(b, a % b);
 }
+
 int main() {
     int n1, m1, n2, m2, k;
     scanf("%d/%d %d/%d %d", &n1, &m1, &n2, &m2, &k);

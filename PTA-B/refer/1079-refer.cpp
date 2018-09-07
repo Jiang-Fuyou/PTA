@@ -1,6 +1,8 @@
+
 #include <iostream>
 #include <algorithm>
 using namespace std;
+
 string add(string a) {
     string b = a, ans;
     reverse(b.begin(), b.end());
@@ -18,6 +20,7 @@ string add(string a) {
     reverse(ans.begin(), ans.end());
     return ans;
 }
+
 int main() {
     string s;
     cin >> s;
