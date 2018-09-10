@@ -1,5 +1,10 @@
+/*
+ * 这道题比较简单，就是找出X-T的选项即可
+ */
+
 #include <iostream>
 using namespace std;
+
 int main() {
     string s;
     while (cin >> s)

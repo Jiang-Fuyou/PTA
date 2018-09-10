@@ -1,0 +1,42 @@
+/**
+ * @file    1067-again.cpp
+ * @brief
+ * @authro  Jiang Yong [chiangyung@aliyun.com]
+ * @version
+ * @date    Fri Sep  7 15:42:43 2018
+ ******************************************************************************/
+
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main(int argc, char const* argv[])
+{
+    vector<string> passwd;
+    string correct, stmp;
+    int n;
+
+    cin >> correct >> n;
+    getchar();
+
+    while (stmp != "#") {
+        getline(cin, stmp);
+        passwd.push_back(stmp);
+    }
+
+    for (int i = 0; i < passwd.size(); i++) {
+        if (i == n) {
+            cout << "Account locked";
+            break;
+        }
+        if (passwd[i] != correct) {
+            cout << "Wrong password: " << passwd[i] << endl;
+        } else {
+            cout << "Welcome in";
+            break;
+        }
+    }
+
+    return 0;
+}
